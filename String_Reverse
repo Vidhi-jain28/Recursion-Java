@@ -1,0 +1,13 @@
+public class reversePrint {
+
+    public static void reverse(String str,int index) {
+        if(index == -1)    return;
+        reverse(str, index-1);
+        System.out.print(str.charAt(index));
+    }
+    
+    public static void main(String[] args) {
+        reverse("vidhi", 4);
+    }
+    
+}
