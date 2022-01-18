@@ -2,6 +2,7 @@
 
     public static int first = -1;
     public static int last = -1;
+    
     public static void Occurence(String str,char ele,int index) {
         if(index == str.length()){
             System.out.println(first);
@@ -19,9 +20,11 @@
         }
         Occurence(str, ele, index+1);
     }
+    
     public static void main(String[] args) {
         String str = "vidhi";
         System.out.println(str.length());
         Occurence(str,'i', 0);
     }
+    
 } 
